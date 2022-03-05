@@ -1,6 +1,6 @@
 # SinglyLinkedList
 
-<img src="https://k.top4top.io/p_2255h0xjs1.png" />
+<img src="https://l.top4top.io/p_2255yzbzu1.png" />
 
 Implement the following on the `SinglyLinkedList.prototype`
 
@@ -36,7 +36,7 @@ This internal/helper function should insert a node at a specified index in a Sin
 
 This function should remove a node at a specified index in a SinglyLinkedList. It should return the removed node.
 
-- [ ] **Reverse**
+- [x] **Reverse**
 
 This function should reverse all of the nodes in a SinglyLinkedList. It should return the reversed SinglyLinkedList.
 
