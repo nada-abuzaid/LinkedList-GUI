@@ -1,6 +1,6 @@
 Implement the following on the `SinglyLinkedList.prototype`
 
-### **<input type="checkbox" checked> Push**
+### [] **<input type="checkbox" checked> Push**
 
 This function should add a node to the end of the SinglyLinkedList. It should return the list so that the method can be chained.
 
