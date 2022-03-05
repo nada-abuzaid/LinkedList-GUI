@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+:root {
+  --main-color: #00c897;
+  --head: #e60965;
+  --tail: #ff7ba9;
+  --find:#7A0BC0;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+.title {
+  color: var(--main-color);
+  margin: 40px auto;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#input {
+  width: 20%;
+  padding: 10px 8px;
+}
+
+.process-section {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px;
+  color: var(--black);
+  font-weight: bold;
+  font-size: 1rem;
+  border: 1px solid var(--black);
+  transition: all 0.3s ease-in-out;
+  background-color: var(--white);
+}
+
+.btn:hover {
+  background-color: var(--main-color);
+  color: var(--white);
+  border: none;
+}
+
+.guide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--black);
+  margin: 20px auto;
+  width: 20%;
+}
+
+.head,
+.tail,
+.founded {
+  display: flex;
+  gap: 5px;
+  margin: 5px 10px;
+  align-items: center;
+}
+
+.head-div,
+.tail-div,
+.find-div {
+  width: 15px;
+  height: 15px;
+  background-color: var(--head);
+  margin: 0;
+}
+
+.tail-div {
+  background-color: var(--tail);
+}
+
+.find-div {
+  background-color: var(--find);
+}
+
+.head-label,
+.tail-label,
+.find-label {
+  font-size: 16px;
+}
+
+#view {
+  max-width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto 30px auto;
+}
+
+#view:last-child {
+  order: 100;
+}
+
+.node {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.far {
+  color: var(--main-color);
+  font-size: 30px;
+}
+
+.node-data {
+  padding: 10px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  color: var(--white);
+  font-weight: 900;
+}
+
+.non {
+  color: var(--black);
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.node:first-child span {
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--white);
+  font-weight: 900;
+  background-color: var(--head);
+}
+
+.node:last-child span {
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--white);
+  font-weight: 900;
+  background-color: var(--tail);
+}
