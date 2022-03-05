@@ -32,7 +32,7 @@ This internal/helper function should insert a node at a specified index in a Sin
 
 This function should remove a node at a specified index in a SinglyLinkedList. It should return the removed node.
 
-- [] **Reverse**
+- [ ] **Reverse**
 
 This function should reverse all of the nodes in a SinglyLinkedList. It should return the reversed SinglyLinkedList.
 
