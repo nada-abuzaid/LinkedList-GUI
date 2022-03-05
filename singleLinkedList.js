@@ -7,6 +7,7 @@ const addEndBtn = document.getElementById('push');
 const removeFirstBtn = document.getElementById('shift');
 const removeEndBtn = document.getElementById('pop');
 const removeBtn = document.getElementById('remove');
+const reverseBtn = document.getElementById('reverse');
 const clearBtn = document.getElementById('clear');
 
 // Node Class
@@ -125,6 +126,21 @@ prototype.pop = function () {
   this.tail = previousNode;
   this.length--;
   return removedNode ? removedNode.val : undefined;
+};
+
+// Reverse all nodes in linkedlist
+prototype.reverse = function () {
+  let i = 0;
+  let j = list.length - 1;
+
+  while (i < j) {
+    let temp = list.getNode(i).val;
+    list.getNode(i).val = list.getNode(j).val;
+    list.getNode(j).val = temp;
+    i++;
+    j--;
+  }
+  return list;
 };
 
 // Handle push method
@@ -258,6 +274,28 @@ getNodeBtn.addEventListener('click', () => {
   } else {
     non.style.display = 'block';
     non.textContent = 'Please, Enter a valid index!';
+  }
+});
+
+// Handle reverse method
+reverseBtn.addEventListener('click', () => {
+  if (list.length > 0) {
+    list.reverse();
+    const nodes = document.getElementsByClassName('node');
+    let i = 0;
+    let j = nodes.length - 1;
+    while (i < j) {
+      const span = nodes[i].getElementsByTagName('span')[0];
+      let temp = nodes[i].getElementsByTagName('span')[0].textContent;
+      nodes[i].getElementsByTagName('span')[0].textContent =
+        nodes[j].getElementsByTagName('span')[0].textContent;
+      nodes[j].getElementsByTagName('span')[0].textContent = temp;
+      i++;
+      j--;
+    }
+  } else {
+    non.style.display = 'block';
+    non.textContent = 'Your Linked List is empty Now!';
   }
 });
 
